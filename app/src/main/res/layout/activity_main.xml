@@ -13,8 +13,6 @@
     tools:context="MainActivity">
 
 
-
-
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="472dp"
@@ -41,78 +39,22 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.342" />
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginBottom="592dp"
-        android:rotation="-129"
-        android:src="@drawable/line"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/grade"
-        android:layout_width="200dp"
-        android:layout_height="187dp"
-        android:layout_marginStart="32dp"
-        android:rotation="13"
-        android:src="@drawable/grade"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/gradetext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="228dp"
-        android:layout_marginBottom="120dp"
-        android:fontFamily="@font/biro"
-        android:rotation="21"
-        android:text="GPA"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
     <EditText
-        android:id="@+id/yourgpa"
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="216dp"
-        android:layout_marginBottom="52dp"
-        android:fontFamily="@font/biro"
-        android:textSize="25sp"
-        android:textColor="@color/red"
-        android:hint="Your GPA"
-        android:rotation="13"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <ImageView
-        android:id="@+id/skill"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="148dp"
-        android:rotation="-47"
-        android:src="@drawable/oldbook"
-        app:layout_constraintStart_toEndOf="@+id/hcmus"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/skill1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/ariblk"
-        android:rotation="-45"
-        android:text="SKILL"
-        android:textSize="16sp"
+        android:fontFamily="@font/ariali"
+        android:gravity="start"
+        android:hint="enter study proccess here..."
+        android:minWidth="170dp"
+        android:minHeight="270dp"
+        android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.804"
+        app:layout_constraintHorizontal_bias="0.808"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.695" />
+        app:layout_constraintVertical_bias="0.62" />
 
     <ImageView
         android:id="@+id/hcmus"
@@ -138,6 +80,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView"
         app:layout_constraintVertical_bias="0.146" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="592dp"
+        android:rotation="-129"
+        android:src="@drawable/line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView"
@@ -380,19 +333,79 @@
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
 
-    <EditText
-        android:id="@+id/textView3"
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="401dp"
+        android:layout_height="658dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="28dp"
+        android:src="@drawable/plasic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/grade"
+        android:layout_width="200dp"
+        android:layout_height="187dp"
+        android:layout_marginStart="32dp"
+        android:rotation="13"
+        android:src="@drawable/grade"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/gradetext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/ariali"
-        android:hint="about experiment..."
-        android:textSize="10sp"
+        android:layout_marginEnd="228dp"
+        android:layout_marginBottom="120dp"
+        android:fontFamily="@font/biro"
+        android:rotation="21"
+        android:text="GPA"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/yourgpa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="216dp"
+        android:layout_marginBottom="52dp"
+        android:fontFamily="@font/biro"
+        android:textSize="25sp"
+        android:textColor="@color/red"
+        android:hint="Your GPA"
+        android:rotation="13"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/skill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
+        android:rotation="-47"
+        android:src="@drawable/oldbook"
+        app:layout_constraintStart_toEndOf="@+id/hcmus"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/skill1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ariblk"
+        android:rotation="-45"
+        android:text="SKILL"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.584"
+        app:layout_constraintHorizontal_bias="0.804"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.366" />
+        app:layout_constraintVertical_bias="0.695" />
+
 
     <ImageButton
         android:id="@+id/btnskill1"
@@ -474,5 +487,6 @@
         android:src="@drawable/line"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnskill3" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
